@@ -1,0 +1,4 @@
+*.sw[opabcd]
+.tailor
+.sass-cache
+.DS_Store

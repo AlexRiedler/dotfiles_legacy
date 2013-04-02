@@ -1,0 +1,25 @@
+*bundles.txt*                    Bundles                      Version 0.1
+
+These are the bundles installed on your system, along with their
+versions and release dates.  Downloaded on 2011-08-08 19:54:32 -0400.
+
+A version number of 'n/a' means upstream hasn't tagged any releases.
+  - |syntastic|                    1.2.0-93-g88dbca8      2011-07-23
+  - |nerdtree|                     4.1.0-42-g2dd198c      2011-07-09
+  - |nerdcommenter|                2.2.2-55-gb28e7be      2011-07-21
+  - |delimitMate|                  2.6-4-g39b8298         2011-07-04
+  - |fakeclip|                     0.2.8                  2010-08-31
+  - |snipmate|                     n/a                    2010-04-08
+  - |supertab|                     1.5-8-g80ec653         2011-06-09
+  - |matchit|                      n/a                    2010-04-28
+  - |align|                        n/a                    2010-04-01
+  - |tabular|                      n/a                    2011-03-31
+  - |fugitive|                     v1.2-25-ga0f5c04       2011-08-07
+  - |cucumber|                     n/a                    2011-02-25
+  - |tslime|                       n/a                    2010-12-21
+  - |ruby|                         vim7.3-33-g7bee8d0     2011-06-02
+  - |rails|                        v4.3-30-gab7e6ab       2011-07-08
+  - |cute-python|                  n/a                    2011-05-27
+  - |pydoc|                        1.4-2-gfd814c4         2011-05-17
+  - |pyflakes-vim|                 n/a                    2011-06-28
+

@@ -1,0 +1,49 @@
+[user]
+    # user information
+    name = Alex Riedler
+    email = alex.riedler@500px.com
+[alias]
+    # really nice log output
+    lg = log --graph --pretty=oneline --abbrev-commit --decorate
+    addnw = !sh -c 'git diff -w --no-color "$@" | git apply --cached' -
+    oldest-ancestor = !zsh -c 'diff -u <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
+    branchdiff = !sh -c 'git diff `git oldest-ancestor`..'
+[color]
+    # enable colors
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = auto
+[color "branch"]
+    # good looking colors i copy/pasted from somewhere
+    current = green bold
+    local = green
+    remote = red bold
+[color "diff"]
+    # good looking colors i copy/pasted from somewhere
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    # good looking colors i copy/pasted from somewhere
+    added = green bold
+    changed = yellow bold
+    untracked = red
+[color "sh"]
+    branch = yellow
+[push]
+    # 'git push' should only do the current branch, not all
+    default = current
+[branch]
+    # always setup 'git pull' to rebase instead of merge
+    # autosetuprebase = always
+[branch.master]
+    rebase = true
+    autosetuprebase = always
+[svn]
+    # push empty directory removals back to svn at directory deletes
+    rmdir = true
+[core]
+    excludesfile = ~/.gitignore
