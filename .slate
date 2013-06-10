@@ -78,6 +78,10 @@ bind down:shift;alt  nudge +0   +5%
 bind 1:ctrl;alt         throw 0 resize
 bind 2:ctrl;alt         throw 1 resize
 bind 3:ctrl;alt         throw 2 resize
+bind l:ctrl;alt         ${righthalf}
+bind h:ctrl;alt         ${lefthalf}
+bind j:ctrl;alt         ${tophalf}
+bind k:ctrl;alt         ${bottomhalf}
 bind right:ctrl;alt;cmd throw right resize
 bind left:ctrl;alt;cmd  throw left  resize
 bind up:ctrl;alt;cmd    throw up    resize

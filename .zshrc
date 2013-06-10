@@ -66,6 +66,7 @@ alias -s scss=$EDITOR
 alias -s sass=$EDITOR
 alias -s coffee=$EDITOR
 alias -s js=$EDITOR
+alias -s cat="pygemntize -g"
 
 # Scala Build Tool - Memory Size Options
 export SBT_OPTS=-XX:MaxPermSize=256m
@@ -93,3 +94,13 @@ export RUBY_HEAP_FREE_MIN=500000
 #export DYLD_LIBRARY_PATH=/usr/local/Cellar/mysql/5.5.27/lib/:$DYLD_LIBRARY_PATH
 # $ sudo env ARCHFLAGS="-arch x86_64" gem install mysql2 -v '0.3.11' -- --with-mysql-config=/usr/local/Cellar/mysql/5.5.27/bin/mysql_config"
 
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/usr/X11/lib/pkgconfig:/usr/local/Library/ENV/pkgconfig/10.8
+
+# add 'brew install coreutils' (GNU utils) to the start of the $PATH
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+alias ls="ls -G --color --group-directories-first"
+
+export PORTFOLIOS=$HOME/devl/work/portfolios
+export FHPX=$HOME/devl/work/500px
+ulimit -n 8192

@@ -106,7 +106,7 @@ endfunction
 autocmd BufRead,BufNewFile *.hamlc.erb setlocal filetype=haml
 autocmd BufRead,BufNewFile *.hamstache setlocal filetype=haml
 
-set mouse=a
-
 set clipboard=unnamed
+
+autocmd BufEnter * silent! lcd %:p:h
 
