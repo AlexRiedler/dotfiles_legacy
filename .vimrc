@@ -37,6 +37,7 @@ set scrolloff=10    " keep X lines above/below when scrolling
 set number          " show line numbers
 set nocp            " Enable no-compatible (for fancy vim features)
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)] " Informative status line
+set nocompatible
 
 " Filetype related automatics
 filetype on         " Enable file-type detection

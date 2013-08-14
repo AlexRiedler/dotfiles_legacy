@@ -77,11 +77,15 @@ alias sublime='open -a "Sublime Text 2"'
 # Tools
 # pip install httpie
 
+# add 'brew install coreutils' (GNU utils) to the start of the $PATH
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
 #
 # RUBY
 #
 
 alias b='bundle'
+source ~/.rvm/scripts/rvm
 
 # Ruby performance optimizations
 export RUBY_HEAP_MIN_SLOTS=1000000
@@ -96,11 +100,6 @@ export RUBY_HEAP_FREE_MIN=500000
 
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/usr/X11/lib/pkgconfig:/usr/local/Library/ENV/pkgconfig/10.8
 
-# add 'brew install coreutils' (GNU utils) to the start of the $PATH
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
 alias ls="ls -G --color --group-directories-first"
 
-export PORTFOLIOS=$HOME/devl/work/portfolios
-export FHPX=$HOME/devl/work/500px
 ulimit -n 8192
