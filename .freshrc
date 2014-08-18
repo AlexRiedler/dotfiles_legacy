@@ -1,0 +1,26 @@
+# other things I want :)
+fresh freshshell/fresh bin/fresh --bin
+fresh twe4ked/dotfiles bin/ghu --bin
+fresh pengwynn/dotfiles bin/termcolors --bin
+
+# my personal dotfiles
+fresh .vim --file=~/.vim/
+fresh .vimrc --file=~/.vimrc
+fresh .httpie --file=~/.httpie/
+fresh .gemrc --file=~/.gemrc
+fresh .gitconfig --file=~/.gitconfig
+fresh .gitmodules --file=~/.gitmodules
+fresh .inputrc --file=~/.inputrc
+fresh .sackrc --file=~/.sackrc
+fresh .slate --file=~/.slate
+fresh .tmux.conf --file=~/.tmux.conf
+fresh .zshrc --file=~/.zshrc
+fresh .zsh --file=~/.zsh/
+fresh .config --file=~/.config/
+fresh Caskfile --file=~/Caskfile
+fresh Brewfile --file=~/Brewfile
+fresh .brew --bin=~/.brew
+
+# install vim, and its bundles
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
