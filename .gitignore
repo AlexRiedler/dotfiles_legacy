@@ -2,3 +2,8 @@
 .tailor
 .sass-cache
 .DS_Store
+.idea
+*.iml
+.vim/bundle/*
+!.vim/bundle/Vundle.vim
+ENV

@@ -71,7 +71,6 @@ prompt_jnrowe_precmd () {
     dir_status="%{$c1%}%n%{$c4%}@%{$c2%}%m%{$c0%}: %{$reset_color%}%~"
     PROMPT="%{$fg_bold[green]%}%p%{$reset_color%}${vcs_info_msg_0_}${dir_status}
 %{$c4%}$ %{$reset_color%}"
-
   elif [[ $(git diff --name-status 2>/dev/null ) != "" ]]; then
     dir_status="%{$c1%}%n%{$c4%}@%{$c2%}%m%{$c0%}: %{$reset_color%}%~"
     PROMPT="%{$fg_bold[green]%}%p%{$reset_color%}${dir_status} ${vcs_info_msg_0_}%{$reset_color%}
@@ -80,7 +79,7 @@ prompt_jnrowe_precmd () {
     dir_status="%{$c1%}%n%{$c4%}@%{$c2%}%m%{$c0%}: %{$reset_color%}%~"
     PROMPT="%{$fg_bold[green]%}%p%{$reset_color%}${dir_status} ${vcs_info_msg_0_}%{$reset_color%}
 %{$c4%}$ %{$reset_color%}"
-fi
+  fi
 }
 
 #  vim: set ft=zsh sw=2 et tw=0:

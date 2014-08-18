@@ -1,7 +1,7 @@
 [user]
     # user information
     name = Alex Riedler
-    email = alex.riedler@500px.com
+    email = alex@riedler.ca
 [alias]
     # really nice log output
     lg = log --graph --pretty=oneline --abbrev-commit --decorate
@@ -47,3 +47,4 @@
     rmdir = true
 [core]
     excludesfile = ~/.gitignore
+	editor = nvim
