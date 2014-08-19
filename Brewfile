@@ -3,6 +3,7 @@
 # https://github.com/seethroughtrees/brew-cask-dotfile-generator
 
 
+install pass
 install ack
 install autoconf
 install automake
